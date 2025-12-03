@@ -1,8 +1,6 @@
 from fastapi import FastAPI
-
+from src.tasks import router as task_router
 
 app = FastAPI()
 
-@app.get('/health')
-def check_health():
-    return {'status': 'OK'}
+app.include_router(task_router)

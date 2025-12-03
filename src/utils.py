@@ -1,0 +1,6 @@
+from supabase import create_client
+
+
+PROJECT_URL = 'https://gwhqddprszcylnnisfnf.supabase.co'
+API_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd3aHFkZHByc3pjeWxubmlzZm5mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjQ3NTA4ODAsImV4cCI6MjA4MDMyNjg4MH0.Ks6Fht1IHVMIb2cUgkYN5zeFlXIvREln9Da65DdvFko'
+db = create_client(PROJECT_URL, API_KEY)
